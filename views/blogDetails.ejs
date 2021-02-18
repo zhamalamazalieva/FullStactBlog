@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <%- include('./partials/header.ejs') %>
+            <section class="blog-details">
+                <div class="container">
+                    <img src="<%= blog.imgUrl %>" alt="" class="blog-details__img">
+                    <div class="blog-details__text">
+                        <h1 class="blog-details__title">
+                            <%= blog.title %>
+                        </h1>
+                        <div class="row">
+                            <span class="blog-details__author">Written by John doe</span>
+                            <span class="blog-details__date">
+                                <%= blog.date %>
+                            </span>
+                        </div>
+                        <p class="blog-details__description">
+                            <%= blog.description %>
+                        </p>
+                        <a class="blog-details__delete" data-doc="<%= blog._id %>">Delete</a>
+                    </div>
+                </div>
+            </section>
+            <%- include('./partials/footer.ejs') %>
+
+    </body>
+
+</html>

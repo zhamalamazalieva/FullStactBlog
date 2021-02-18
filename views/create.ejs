@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('./partials/head.ejs') %>
+
+  <body>
+
+    <%- include('./partials/header.ejs') %>
+
+      <div class="create-blog content">
+        <form class="column" method="POST" action="/blogs">
+          <label for="title">Заголовок Блога:</label>
+          <input type="text" id="title" name="title" required>
+          <label for="imgUrl">Картинка Блога:</label>
+          <input type="text" id="imgUrl" name="imgUrl" required>
+          <label for="snippet">Дата создания Блога:</label>
+          <input type="text" id="date" name="date" required>
+          <label for="body">Blog body:</label>
+          <textarea id="description" name="description" required></textarea>
+          <button>Submit</button>
+        </form>
+      </div>
+
+      <%- include('./partials/footer.ejs') %>
+  </body>
+
+</html>

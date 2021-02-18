@@ -1,0 +1,29 @@
+.hero{
+    padding: 70px 0;
+    background-color: #FBFBFB;
+}
+.hero__row{
+    align-items: center;
+}
+.hero__title{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    color: #000000;
+    position: relative;
+}
+.hero__img--small{
+    position: absolute;
+    bottom: 0;
+    right:200px;
+}
+.hero__subtitle{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #4A5568;
+}

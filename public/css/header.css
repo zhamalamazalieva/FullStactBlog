@@ -1,0 +1,25 @@
+.header{
+    padding: 36px 0;
+}
+.header__row{
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav{
+    display: flex;
+    list-style-type: none;
+}
+.header__list{
+    margin-left: 35px;
+}
+.header__input{
+    border: transparent;
+}
+form{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.header__search{
+    margin-right: 12px;
+}

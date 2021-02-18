@@ -1,0 +1,33 @@
+<sectiom class="blogs">
+    <div class="container">
+        <div class="row blogs__margin">
+            <% if (blogs.length> 0) { %>
+                <% blogs.forEach(blog=> { %>
+                    <div class="col-4">
+                        <a href="/blogs/<%= blog._id %> " class="blogs__item">
+                            <img src=<%=blog.imgUrl %> alt="" class="blogs__img">
+                            <div class="blogs__text">
+                                <h3 class="blogs__title">
+                                    <%= blog.title %>
+                                </h3>
+                                <p class="blogs__description">
+                                    <%= blog.description %>
+                                </p>
+                                <div class="row blogs__row">
+                                    <date class="blogs__date">
+                                        <%= blog.date %>
+                                    </date>
+                                    <span class="blogs__readmore">
+                                        Read more
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <% }) %>
+                        <% } else { %>
+                            <p>There are no blogs to display...</p>
+                            <% } %>
+        </div>
+    </div>
+</sectiom>
