@@ -101,6 +101,13 @@ app.get("/create", (req, res) => {
   res.render("create", { title: "Create a new blog" });
 });
 
+app.delete('/blogs/:id', (request, response) => {
+  const id = request.params.id;
+  Blog.findByIdAndDelete(id).then(() => {
+    response.json({redirect: '/blogs'});
+  })
+})
+
 // 404 page
 app.use((req, res) => {
   res.status(404).render("404", { title: "404" });
